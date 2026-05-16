@@ -173,7 +173,7 @@ def run_pipeline(access_token, conn):
     # Neutres — pour avoir un dataset équilibré
     "actualité", "breaking news"]
 """
-    for query in ["fake news", "désinformation", "complot", "hoax", "fact check"]:
+    for query in ["iran","ormuze", "trump", "ukraine guerre", "xi jinping", "hantavirus"]:
         raw_posts = search_posts(access_token, query=query, limit=100, max_pages=5)
         clean_posts = filter_language(raw_posts)
         store_posts(clean_posts, conn)
